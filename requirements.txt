@@ -1,0 +1,5 @@
+pdf2image
+pillow
+pathlib
+numpy
+scikit-learn
