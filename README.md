@@ -6,7 +6,6 @@
 
 > I added a script (`setup.ps1`) if using powershell for Windows. It will install all the pre-requites for you. I created it as a way to document what I'd done to make it all work, the steps are detailed below anyway:
 
-
 ## Install Poppler
 
 For pdf classification we convert the PDF's to images as some PDF files may be scans without any text data. We can then use a simple sklean Support Vector Machine to classify the documents based on how they look.
@@ -18,7 +17,6 @@ Windows
 ```powershell 
 winget install poppler
 ```
-
 
 Ubuntu 
 ``` bash
@@ -44,8 +42,7 @@ pdfinfo -v
 
 ## Adding Example Data
 
-You can add data to the examples folder, subfolders are used as labels:
-e.g. `examples/invoices/*.pdf` will all be labelled as invoices by convention.
+You can add data in a folder called "examples" in the project's root dir. Subfolders are used as labels: e.g. `examples/invoices/*.pdf` will all be labelled as invoices by convention. It's important that you stick with this folder structure for now.
 
 ## Install Python Packages
 
